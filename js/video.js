@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Play the video
   playButton.addEventListener("click", () => {
     video.play();
+    volumeDisplay.textContent = `${Math.round(video.volume * 100)}%`;
+
   });
 
   // Pause the video
